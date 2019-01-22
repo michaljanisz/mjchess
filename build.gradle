@@ -1,0 +1,16 @@
+plugins {
+    id 'io.franzbecker.gradle-lombok' version '1.14'
+    id 'java'
+    id 'net.ltgt.apt' version '0.10'
+
+}
+
+repositories {
+    jcenter() // or Maven central, required for Lombok dependency
+    mavenCentral()
+}
+
+
+dependencies {
+    compileOnly('org.projectlombok:lombok:1.16.20')
+}
