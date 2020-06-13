@@ -14,3 +14,11 @@ repositories {
 dependencies {
     compileOnly('org.projectlombok:lombok:1.16.20')
 }
+
+sourceSets {
+    main {
+        java {
+            srcDir 'core/src/main/java'
+        }
+    }
+}
